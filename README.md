@@ -30,29 +30,20 @@ This repository contains the comprehensive development, testing, and debugging i
 
 | Category | Document | Description |
 |----------|----------|-------------|
-| **📊 Project Status** | [Project Status](docs/PROJECT_STATUS.md) | Current project status, phase progress, and achievements |
+| **📊 Project Info** | [Project Information](docs/PROJECT_INFO.md) | Project status, phases, releases, and development workflow |
 | **🧪 Testing** | [Testing Guide](docs/guides/TESTING_GUIDE.md) | Comprehensive testing procedures and framework usage |
-| **🔧 Debug & Troubleshoot** | [Debugging Guide](docs/DEBUGGING_GUIDE.md) | Troubleshooting workflows and debug procedures |
-| **🚀 Releases** | [Release Notes](docs/RELEASES.md) | Release history, announcements, and version information |
+| **🔧 Troubleshooting** | [Troubleshooting Guide](docs/TROUBLESHOOTING.md) | Complete debugging and troubleshooting procedures |
 | **📝 Changes** | [Changelog](docs/CHANGELOG.md) | Detailed change history and version updates |
-| **🔒 Security** | [Security Assessment](docs/SECURITY_ASSESSMENT.md) | Security documentation and best practices |
-| **⚡ Implementation** | [Implementation Details](docs/IMPLEMENTATION_DETAILS.md) | Technical specifications and architecture |
+| **🔗 Mapping** | [Production-Dev Mapping](docs/PRODUCTION_DEV_MAPPING.md) | Mapping between production and development tools |
 
-### 📖 Additional Resources
+### 🔧 Key Development Tools
 
-| Guide | Purpose |
-|-------|---------|
-| [Branch Strategy](docs/BRANCH_STRATEGY.md) | Git workflow and branching guidelines |
-| [Coding Standards](docs/CODING_STANDARDS.md) | Development standards and best practices |
-| [Firewall Ports Guide](docs/FIREWALL_PORTS_GUIDE.md) | Network configuration and port management |
-| [Troubleshooting](docs/TROUBLESHOOTING.md) | Quick fixes and common issues |
-
-### 📊 Reports & Analysis
-
-| Report | Content |
-|--------|---------|
-| [Code Review](docs/reports/CODE_REVIEW.md) | Comprehensive codebase analysis and quality assessment |
-| [Debug Tools Update](docs/reports/DEBUG_TOOLS_UPDATE.md) | Debug tools enhancement and validation summary |
+| Tool | Purpose |
+|------|---------|
+| [SSL Certificate Validation](tests/ssl-certificate-validation.sh) | Comprehensive SSL/TLS testing and security validation |
+| [Production Compliance Checker](scripts/production-compliance-checker.sh) | Validates deployments against production requirements |
+| [Debug Commands](scripts/debug_commands.sh) | 30+ system diagnostic checks and validations |
+| [Comprehensive Test Suite](tests/comprehensive-test-suite.sh) | Complete testing framework with 100+ scenarios |
 
 ---
 
