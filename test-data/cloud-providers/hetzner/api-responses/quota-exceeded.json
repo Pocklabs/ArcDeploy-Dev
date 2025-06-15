@@ -1,0 +1,84 @@
+{
+  "error": {
+    "code": "quota_exceeded",
+    "message": "Resource quota exceeded. Cannot create additional servers.",
+    "details": {
+      "resource_type": "servers",
+      "quota_limit": 25,
+      "current_usage": 25,
+      "requested": 1,
+      "available": 0,
+      "quota_type": "account_limit"
+    }
+  },
+  "meta": {
+    "request_id": "req_quota_exceeded_def789",
+    "timestamp": "2024-01-15T14:22:15+00:00",
+    "api_version": "v1",
+    "endpoint": "/servers",
+    "method": "POST",
+    "account_id": "acc_test_12345",
+    "project_id": "prj_arcdeploy_testing"
+  },
+  "status_code": 422,
+  "documentation_url": "https://docs.hetzner.cloud/#quotas-and-limits",
+  "quota_details": {
+    "servers": {
+      "limit": 25,
+      "used": 25,
+      "available": 0
+    },
+    "floating_ips": {
+      "limit": 5,
+      "used": 2,
+      "available": 3
+    },
+    "volumes": {
+      "limit": 100,
+      "used": 45,
+      "available": 55
+    },
+    "snapshots": {
+      "limit": 50,
+      "used": 12,
+      "available": 38
+    },
+    "load_balancers": {
+      "limit": 5,
+      "used": 1,
+      "available": 4
+    }
+  },
+  "suggestions": [
+    "Delete unused servers to free up quota",
+    "Contact support to request quota increase",
+    "Consider using smaller server types to maximize resource utilization",
+    "Review and clean up any servers in 'off' state that are still consuming quota"
+  ],
+  "next_available_quota_reset": null,
+  "contact_support": {
+    "url": "https://console.hetzner.cloud/support",
+    "email": "support@hetzner.com",
+    "message": "Request quota increase with business justification"
+  },
+  "current_servers": [
+    {
+      "id": 1001,
+      "name": "production-web-01",
+      "status": "running",
+      "server_type": "cx41"
+    },
+    {
+      "id": 1002,
+      "name": "production-web-02", 
+      "status": "running",
+      "server_type": "cx41"
+    },
+    {
+      "id": 1003,
+      "name": "development-test-server",
+      "status": "off",
+      "server_type": "cx21"
+    }
+  ]
+}

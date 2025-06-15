@@ -1,0 +1,40 @@
+{
+  "error": {
+    "code": "rate_limit_exceeded",
+    "message": "API rate limit exceeded. Please wait before making additional requests.",
+    "details": {
+      "limit": 3600,
+      "window": "1 hour",
+      "remaining": 0,
+      "reset_at": "2024-01-15T11:00:00+00:00",
+      "retry_after": 1800
+    }
+  },
+  "meta": {
+    "request_id": "req_rate_limit_abc123",
+    "timestamp": "2024-01-15T10:45:30+00:00",
+    "api_version": "v1",
+    "endpoint": "/servers",
+    "method": "POST",
+    "rate_limit": {
+      "limit": 3600,
+      "remaining": 0,
+      "reset": "2024-01-15T11:00:00+00:00",
+      "policy": "sliding_window"
+    }
+  },
+  "status_code": 429,
+  "documentation_url": "https://docs.hetzner.cloud/#rate-limiting",
+  "suggestions": [
+    "Implement exponential backoff in your client",
+    "Cache responses when possible to reduce API calls",
+    "Consider using webhooks for real-time updates instead of polling",
+    "Distribute requests across multiple API tokens if available"
+  ],
+  "headers": {
+    "X-RateLimit-Limit": "3600",
+    "X-RateLimit-Remaining": "0",
+    "X-RateLimit-Reset": "1705316400",
+    "Retry-After": "1800"
+  }
+}

@@ -1,0 +1,11 @@
+# This is not a valid SSH key format - missing key type and data
+invalid-ssh-key-format some-random-text-that-is-not-base64 user@wrong-format.test
+
+# Another invalid line with just random text
+this-is-definitely-not-a-ssh-key
+
+# Missing the ssh- prefix
+ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGKqVXqMghRrHKZgeQGzKqwXYsOy test@wrong.format
+
+# Wrong key type
+ssh-invalid AAAAC3NzaC1lZDI1NTE5AAAAIGKqVXqMghRrHKZgeQGzKqwXYsOy test@invalid-type.test

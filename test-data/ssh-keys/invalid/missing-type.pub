@@ -1,0 +1,9 @@
+AAAAC3NzaC1lZDI1NTE5AAAAIGKqVXqMghRrHKZgeQGzKqwXYsOyAMJQl+U6k8Ee1234 test@missing-type.invalid
+
+# This key is missing the ssh-ed25519 type prefix
+# Should cause validation failures in SSH key parsing
+
+AAAAB3NzaC1yc2EAAAADAQABAAACAQC7vbqajDjI4e5e6ZQGjYeMhAdHq4e0LwOKCi test@missing-rsa-type.invalid
+
+# Another key missing type - just the base64 data and comment
+AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBK1mZjI4e5e6ZQGjYeM test@missing-ecdsa-type.invalid

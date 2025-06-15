@@ -1,0 +1,164 @@
+{
+  "server": {
+    "id": 42,
+    "name": "arcdeploy-test-server-001",
+    "status": "initializing",
+    "public_net": {
+      "ipv4": {
+        "ip": "203.0.113.42",
+        "blocked": false,
+        "dns_ptr": [
+          {
+            "ip": "203.0.113.42",
+            "dns_ptr": "arcdeploy-test-server-001.example.com"
+          }
+        ]
+      },
+      "ipv6": {
+        "ip": "2001:db8:42::/64",
+        "blocked": false,
+        "dns_ptr": []
+      },
+      "floating_ips": []
+    },
+    "private_net": [],
+    "server_type": {
+      "id": 3,
+      "name": "cx31",
+      "description": "CX31",
+      "cores": 2,
+      "memory": 8.0,
+      "disk": 80,
+      "prices": [
+        {
+          "location": "nbg1",
+          "price_hourly": {
+            "net": "0.0119000000",
+            "gross": "0.0141610000"
+          },
+          "price_monthly": {
+            "net": "7.9300000000",
+            "gross": "9.4367000000"
+          }
+        }
+      ],
+      "storage_type": "local",
+      "cpu_type": "shared"
+    },
+    "image": {
+      "id": 114,
+      "type": "system",
+      "status": "available",
+      "name": "ubuntu-22.04",
+      "description": "Ubuntu 22.04 LTS",
+      "os_flavor": "ubuntu",
+      "os_version": "22.04",
+      "rapid_deploy": true,
+      "protection": {
+        "delete": false
+      },
+      "deprecated": false,
+      "created": "2023-05-15T08:30:00+00:00"
+    },
+    "datacenter": {
+      "id": 4,
+      "name": "nbg1-dc3",
+      "description": "Nuremberg 1 DC3",
+      "location": {
+        "id": 1,
+        "name": "nbg1",
+        "description": "Nuremberg DC Park 1",
+        "country": "DE",
+        "city": "Nuremberg",
+        "latitude": 49.452102,
+        "longitude": 11.076665,
+        "network_zone": "eu-central"
+      },
+      "server_types": {
+        "supported": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39],
+        "available": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39],
+        "available_for_migration": [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27, 29, 31, 33, 35, 37, 39]
+      }
+    },
+    "created": "2024-01-15T10:30:00+00:00",
+    "protection": {
+      "delete": false,
+      "rebuild": false
+    },
+    "labels": {
+      "environment": "testing",
+      "project": "arcdeploy",
+      "managed-by": "arcdeploy-test-suite",
+      "cost-center": "development",
+      "auto-shutdown": "true"
+    },
+    "volumes": [],
+    "backup_window": null,
+    "rescue_enabled": false,
+    "iso": null,
+    "locked": false,
+    "included_traffic": 654321098765,
+    "outgoing_traffic": 0,
+    "ingoing_traffic": 0,
+    "primary_disk_size": 80,
+    "placement_group": null,
+    "firewall": {
+      "id": 101,
+      "name": "arcdeploy-default-firewall"
+    }
+  },
+  "action": {
+    "id": 13,
+    "command": "create_server",
+    "status": "running",
+    "progress": 0,
+    "started": "2024-01-15T10:30:00+00:00",
+    "finished": null,
+    "resources": [
+      {
+        "id": 42,
+        "type": "server"
+      }
+    ],
+    "error": null
+  },
+  "next_actions": [
+    {
+      "id": 13,
+      "command": "create_server",
+      "status": "running",
+      "progress": 0,
+      "started": "2024-01-15T10:30:00+00:00",
+      "finished": null,
+      "resources": [
+        {
+          "id": 42,
+          "type": "server"
+        }
+      ],
+      "error": null
+    }
+  ],
+  "root_password": "YourStrong!PassWorD123",
+  "meta": {
+    "request_id": "req_abc123def456",
+    "timestamp": "2024-01-15T10:30:00+00:00",
+    "api_version": "v1",
+    "rate_limit": {
+      "limit": 3600,
+      "remaining": 3599,
+      "reset": "2024-01-15T11:00:00+00:00"
+    }
+  },
+  "warnings": [],
+  "notices": [
+    {
+      "type": "info",
+      "message": "Server is being created with cloud-init user data"
+    },
+    {
+      "type": "info", 
+      "message": "Firewall rules will be applied during server initialization"
+    }
+  ]
+}
